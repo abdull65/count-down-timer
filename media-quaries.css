@@ -22,4 +22,8 @@
     height: 5rem;
     width: 5rem;
   }
+
+  .hill {
+    object-position: bottom;
+  }
 }
