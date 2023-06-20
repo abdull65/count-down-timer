@@ -23,7 +23,13 @@
     width: 5rem;
   }
 
+  .star {
+    position: absolute;
+    bottom: 0;
+  }
+
   .hill {
-    object-position: bottom;
+    position: absolute;
+    bottom: 0;
   }
 }
