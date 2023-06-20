@@ -1,17 +1,17 @@
 @media screen and (min-width: 300px) and (max-width: 700px) {
   #container {
-    height: 100vh;
+    height: 90vh;
   }
 
   .setDateBox {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 50%);
   }
 
   #dateInput {
-    height: 2rem;
+    height: 3rem;
     width: 20rem;
     font-size: 1.4rem;
     letter-spacing: 1px;
@@ -34,4 +34,13 @@
     position: absolute;
     bottom: 0;
   }
+
+  #days::after,
+  #hours::after,
+  #minutes::after,
+  #seconds::after {
+    font-size: 1rem;
+    bottom: -20px;
+  }
+
 }
