@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="media-quaries.css" type="text/css" />
+    <title>Frontend Mentor | Launch countdown timer</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- We're launching soon Days Hours Minutes Seconds -->
+      <div class="setDateBox">
+        <input
+          type="text"
+          name="date"
+          id="dateInput"
+          placeholder="Input Event Date"
+          onfocus="(this.type='date')"
+        />
+      </div>
+      <div class="mainContentBox">
+        <div class="content" id="days"></div>
+        <div class="content" id="hours"></div>
+        <div class="content" id="minutes"></div>
+        <div class="content" id="seconds"></div>
+      </div>
+      <div class="starElement">
+        <img src="./images/bg-stars.svg" class="star" alt="star photo" />
+      </div>
+      <div class="hillElement">
+        <img src="./images/pattern-hills.svg" class="hill" alt="hill photo" />
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
