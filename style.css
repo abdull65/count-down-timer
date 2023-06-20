@@ -28,6 +28,7 @@ html {
 
 #container {
   background-color: var(--Darkdesaturatedblue);
+  /* height: 100%; */
   position: relative;
 }
 
