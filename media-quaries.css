@@ -5,13 +5,13 @@
 
   .setDateBox {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, 50%);
   }
 
   #dateInput {
-    height: 3rem;
+    height: 3.5rem;
     width: 20rem;
     font-size: 1.4rem;
     letter-spacing: 1px;
