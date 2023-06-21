@@ -7,6 +7,9 @@ function setCountDown() {
   const currentHour = document.getElementById("hours");
   const currentMinutes = document.getElementById("minutes");
   const currentSeconds = document.getElementById("seconds");
+
+  /////////////////////// store data //////////////////
+  localStorage.setItem("date", JSON.stringify(dateInput));
   const daysLeft = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   const hoursLeft = Math.floor(
     (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -21,12 +24,16 @@ function setCountDown() {
   currentMinutes.innerHTML = minutesLeft;
   currentSeconds.innerHTML = secondsLeft;
 
+  ///////////////// retrieve data //////////////
+  const getData = localStorage.getItem("date");
+  const parseData = JSON.parse(localStorage.getItem("date"));
+
   if (timeDifference < lunchDate.getSeconds()) {
     clearInterval(countdownInterval);
     alert("count down is over");
   }
 }
-document.getElementById("dateInput").addEventListener("focus", () => {
+document.getElementById("dateInput").addEventListener("change", () => {
   const countdownInterval = setInterval(setCountDown, 1000);
   setCountDown();
 });
