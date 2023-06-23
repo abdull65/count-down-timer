@@ -59,15 +59,19 @@ body {
   bottom: 0;
 }
 
-.setDateBox {
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   position: absolute;
-  top: 20rem;
+  top: 10rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1010;
 }
 
-#dateInput {
+#dateInput,
+#eventTitle {
   height: 5rem;
   width: 50rem;
   font-size: 2rem;
@@ -75,11 +79,20 @@ body {
   padding-left: 1rem;
 }
 
+#eventTitle {
+  text-transform: uppercase;
+}
+
+#eventTitle::placeholder {
+  text-transform: capitalize;
+}
+
 #dateInput::placeholder {
   font-style: italic;
 }
 
-#dateInput:focus {
+#dateInput:focus,
+#eventTitle:focus {
   outline: none;
   border: 2px solid var(--Verydarkblue);
 }

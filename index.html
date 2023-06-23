@@ -21,14 +21,25 @@
   <body>
     <div id="container">
       <!-- We're launching soon Days Hours Minutes Seconds -->
-      <div class="setDateBox">
-        <input
-          type="text"
-          name="date"
-          id="dateInput"
-          placeholder="Input Event Date"
-          onfocus="(this.type='date')"
-        />
+      <div class="inputField">
+        <div class="setEventTitle">
+          <input
+            type="text"
+            name="title"
+            id="eventTitle"
+            class="eventTitle"
+            placeholder="Enter Event Title"
+          />
+        </div>
+        <div class="setDateBox">
+          <input
+            type="text"
+            name="date"
+            id="dateInput"
+            placeholder="Click To Input Event Date"
+            onfocus="(this.type='date')"
+          />
+        </div>
       </div>
       <div class="mainContentBox">
         <div class="cardsBox">
@@ -52,12 +63,8 @@
           <div class="bottomCard"></div>
         </div>
       </div>
-      <div class="starElement">
-        <!-- <img src="./images/bg-stars.svg" class="star" alt="star photo" /> -->
-      </div>
-      <div class="hillElement">
-        <!-- <img src="./images/pattern-hills.svg" class="hill" alt="hill photo" /> -->
-      </div>
+      <div class="starElement"></div>
+      <div class="hillElement"></div>
     </div>
     <div class="attribution">
       Challenge by
