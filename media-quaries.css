@@ -21,7 +21,7 @@
   .topCard,
   .bottomCard {
     height: 4rem;
-    width: 10rem;
+    width: 8rem;
   }
 
   .content {
@@ -44,7 +44,7 @@
   #minutes::after,
   #seconds::after {
     font-size: 1rem;
-    bottom: -20px;
+    bottom: -50px;
   }
 
 }
