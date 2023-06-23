@@ -44,7 +44,7 @@
   .cardsBox:nth-child(3)::after,
   .cardsBox:nth-child(4)::after {
     font-size: 1rem;
-    bottom: -50px;
+    bottom: -30px;
   }
 
 }
