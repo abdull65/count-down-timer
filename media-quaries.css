@@ -28,17 +28,6 @@
     font-size: 2rem;
   }
 
-  .star {
-    position: absolute;
-    bottom: 40%;
-    transform: translateY(50%);
-  }
-
-  .hill {
-    position: absolute;
-    bottom: 0;
-  }
-
   .cardsBox:nth-child(1)::after,
   .cardsBox:nth-child(2)::after,
   .cardsBox:nth-child(3)::after,
