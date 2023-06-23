@@ -39,10 +39,10 @@
     bottom: 0;
   }
 
-  #days::after,
-  #hours::after,
-  #minutes::after,
-  #seconds::after {
+  .cardsBox:nth-child(1)::after,
+  .cardsBox:nth-child(2)::after,
+  .cardsBox:nth-child(3)::after,
+  .cardsBox:nth-child(4)::after {
     font-size: 1rem;
     bottom: -50px;
   }

@@ -109,46 +109,31 @@ body {
   overflow: hidden;
 }
 
-#days::after {
+.cardsBox:nth-child(1)::after {
   content: "Days";
-  font-size: 1.6rem;
-  color: var(--White);
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-#hours::after {
+.cardsBox:nth-child(2)::after {
   content: "Hours";
-  font-size: 1.6rem;
-  color: var(--White);
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-#minutes::after {
+.cardsBox:nth-child(3)::after {
   content: "Minutes";
-  font-size: 1.6rem;
-  color: var(--White);
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-#seconds::after {
+.cardsBox:nth-child(4)::after {
   content: "Seconds";
+}
+
+.cardsBox:nth-child(1)::after,
+.cardsBox:nth-child(2)::after,
+.cardsBox:nth-child(3)::after,
+.cardsBox:nth-child(4)::after {
   font-size: 1.6rem;
   color: var(--White);
   letter-spacing: 2px;
   position: absolute;
-  bottom: -50px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
 }
