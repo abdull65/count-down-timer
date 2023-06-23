@@ -79,49 +79,71 @@ html {
 }
 
 .content {
-  background-color: var(--Verydark);
+  background-color: transparent;
   font-size: 4.6rem;
   color: var(--Softred);
-  height: 12rem;
-  width: 12rem;
-  display: inline-flex;
-  justify-content: center;
+  position: absolute;
+}
+
+.cardsBox {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin: 1rem;
-  border-radius: .8rem;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+  justify-content: center;
   position: relative;
+}
+
+.topCard,
+.bottomCard {
+  height: 5rem;
+  width: 12rem;
+  background-color: var(--Verydark);
+  margin: 0 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 .5rem hsl(234, 17%, 12%);
+  overflow: hidden;
 }
 
 #days::after {
   content: "Days";
   font-size: 1.6rem;
   color: var(--White);
+  letter-spacing: 2px;
   position: absolute;
-  bottom: -30px;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #hours::after {
   content: "Hours";
   font-size: 1.6rem;
   color: var(--White);
+  letter-spacing: 2px;
   position: absolute;
-  bottom: -30px;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #minutes::after {
   content: "Minutes";
   font-size: 1.6rem;
   color: var(--White);
+  letter-spacing: 2px;
   position: absolute;
-  bottom: -30px;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #seconds::after {
   content: "Seconds";
   font-size: 1.6rem;
   color: var(--White);
+  letter-spacing: 2px;
   position: absolute;
-  bottom: -30px;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
