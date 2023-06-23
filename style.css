@@ -72,12 +72,14 @@ body {
 
 #dateInput,
 #eventTitle {
+  background-color: transparent;
   color: var(--White);
   height: 5rem;
   width: 50rem;
   font-size: 2rem;
   letter-spacing: 4px;
   padding-left: 1rem;
+  border: 2px solid var(--White);
 }
 
 #eventTitle {
